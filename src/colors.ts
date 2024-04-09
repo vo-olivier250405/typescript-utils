@@ -9,6 +9,6 @@ const ansiCodes = {
   white: 37,
 };
 
-export function cs(str: string, color: keyof typeof ansiCodes) {
+export default function cs(str: string, color: keyof typeof ansiCodes) {
   return `\x1b[${ansiCodes[color]}m${str}\x1b[0m`;
 }

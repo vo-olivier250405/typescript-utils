@@ -1,7 +1,9 @@
 import * as readline from "readline";
-import { cs } from "./colors";
+import cs from "./colors";
 
-export function menuSelect(options: { name: string; function: () => void }[]) {
+export default function menuSelect(
+  options: { name: string; function: () => void }[]
+) {
   let currentChoice: number = 0;
 
   const handleOnChange = (offset: -1 | 1) => {
