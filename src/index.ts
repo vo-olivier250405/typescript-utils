@@ -25,6 +25,8 @@
 // };
 
 // console.log(chunkArray([1, 2, 3, 4, 5, 6, 7, 7], 3));
-import { groupByPairsData } from "./lib/groupByPairsData";
+import { underscoreToSentence, capitalizeFirstLetter } from "./lib/formatter";
 
-groupByPairsData();
+const test = underscoreToSentence("test");
+const formatedString = capitalizeFirstLetter(test);
+console.log(formatedString);
