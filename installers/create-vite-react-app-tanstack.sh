@@ -19,5 +19,7 @@ cd $PROJECT_NAME;
 bun add @tanstack/react-router
 bun add @tanstack/react-query
 bun add -D @tanstack/router-plugin @tanstack/router-devtools
+bun install -D @tanstack/router-plugin
+bun install -D @tanstack/router-cli
 bun install -D tailwindcss postcss autoprefixer
 bunx tailwindcss init -p
